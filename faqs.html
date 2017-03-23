@@ -1,125 +1,146 @@
+<script>
+function faqScroll(id) {
+  var idString = "#" + id;
+  var headerOffset = window.innerWidth > 1024 ? jQuery('.site-header').outerHeight() : 20;
+  jQuery('html, body').animate({scrollTop: jQuery(idString).offset().top - headerOffset}, 'slow');
+}
+</script>
 <ul class="faq-links">
-  <li class="faq-link">
-    <a href="#overview">Overview</a>
+ 	<li class="faq-link"><a href="#" onClick="faqScroll('overview')">Overview</a>
+<ul>
+ 	<li class="faq-link"><a href="#" onClick="faqScroll('what-is-kaminari-taiko')">What is Kaminari Taiko?</a></li>
+ 	<li class="faq-link"><a href="#" onClick="faqScroll('who-is-kaminari-taiko-for')">Who is Kaminari Taiko for?</a></li>
+ 	<li class="faq-link"><a href="#" onClick="faqScroll('what-can-i-do-with')">What can I do with Kaminari Taiko?</a></li>
+</ul>
+</li>
+ 	<li class="faq-link"><a href="#" onClick="faqScroll('products')">Products</a>
+<ul>
+ 	<li class="faq-link"><a href="#" onClick="faqScroll('how-big-is-kaminari-taiko')">How big is Kaminari Taiko?</a></li>
+ 	<li class="faq-link"><a href="#" onClick="faqScroll('what-is-included-bundle')">What is included in the bundle?</a></li>
+ 	<li class="faq-link"><a href="#" onClick="faqScroll('dont-want-bundle')">I don't want the bundle. Can I buy the drum unit on its own?</a></li>
+ 	<li class="faq-link"><a href="#" onClick="faqScroll('why-are-earphones-being-sold')">Why are earphones being sold?</a></li>
+</ul>
+</li>
+ 	<li class="faq-link"><a href="#" onClick="faqScroll('payment-warranty')">Payment &amp; Warranty</a>
+<ul>
+ 	<li class="faq-link"><a href="#" onClick="faqScroll('what-payment-methods-accepted')">What payment methods are accepted?</a></li>
+ 	<li class="faq-link"><a href="#" onClick="faqScroll('i-want-to-return')">I want to return my purchase! What do I do?</a></li>
+ 	<li class="faq-link"><a href="#" onClick="faqScroll('how-long-does-warranty-last')">How long does the warranty last?</a></li>
+</ul>
+</li>
+ 	<li class="faq-link"><a href="#" onClick="faqScroll('troubleshooting')">Troubleshooting</a>
+<ul>
+ 	<li class="faq-link"><a href="#" onClick="faqScroll('drum-not-making-sounds')">Help! The drum is not making any sounds.</a></li>
+ 	<li class="faq-link"><a href="#" onClick="faqScroll('how-to-record-audio-files')">How do I record an audio file with Kaminari Taiko?</a></li>
+</ul>
+</li>
+</ul>
+&nbsp;
+<h2 id="overview">
+  <span >Overview:</span>
+</h2>
+<div class="question">
+  <div id="what-is-kaminari-taiko" class="faq-question">What is Kaminari Taiko? </div>
+
+  <div  class="faq-answer">Kaminari (“Thunder”) Taiko is a smaller, electric version of the traditional Japanese taiko drum. It produces the same sounds a normal taiko drum would. </div>
+</div>
+
+<div class="question">
+  <div id="who-is-kaminari-taiko-for" class="faq-question">Who is Kaminari Taiko for?</div>
+
+  <div  class="faq-answer">For anyone! It could perfect for a talented and experienced taiko player or simply for someone who wants to pick up a new hobby. </div>
+</div>
+
+<div class="question">
+  <div id="what-can-i-do-with" class="faq-question">What can I do with Kaminari Taiko?</div>
+
+  <div  class="faq-answer">To play music! The drum measures the velocity at the point of contact, creating a dynamic range of sounds. It is lightweight and easily transportable. In order to produce sound, the drum must be plugged into an output audio source. For those who like to play in the comfort of their home, simply plug in earphones and nobody else would be disturbed.</div>
+</div>
+
+&nbsp;
+<h2 id="products">
+  <span >Products: </span>
+</h2>
+
+<div class="question">
+  <div id="how-big-is-kaminari-taiko" class="faq-question">How big is Kaminari Taiko? </div>
+
+  <div  class="faq-answer">
+    <p>Dimensions: 20 in/50.3cm diameter, 4.5 in/11.4 cm tall</p>
+    <p>Weight: 6.6 lbs/3 kg</p>
+  </div>
+</div>
+
+
+<div class="question">
+  <div id="what-is-included-bundle" class="faq-question">What is included in the bundle? </div>
+
+  <div class="faq-answer">One Kaminari Taiko unit, bag, and Apple earphones</div>
+</div>
+
+<div class="question">
+  <div id="dont-want-bundle" class="faq-question">I don’t want the bundle. Can I buy the drum unit on its own?</div>
+
+  <div  class="faq-answer">Yes! Head over to the Products page and you will find it listed as a product individually. The drum by itself costs $980 USD. </div>
+</div>
+
+<div class="question">
+  <div id="why-are-earphones-being-sold" class="faq-question">Why are earphones being sold? </div>
+
+  <div  class="faq-answer">Kaminari Taiko will only produce drum-like sounds when the drum is plugged into an output source, like a speaker or headphones. We want you to have the full experience with our product.</div>
+</div>
+
+&nbsp;
+<h2 id="payment-warranty">
+  <span >Payment &amp; Warranty</span>
+</h2>
+<div class="question">
+  <div id="what-payment-methods-accepted" class="faq-question">What payment methods are accepted?</div>
+
+  <div  class="faq-answer">Credit cards &amp; Debit cards, Paypal?(maybe?)</div>
+</div>
+
+<div class="question">
+  <div id="i-want-to-return" class="faq-question">I want to return my purchase! What do I do?</div>
+
+  <div class="faq-answer">Contact us at <a href="mailto:Sales@kaminari.com">sales@kaminari.com</a> for more information.</div>
+</div>
+
+<div class="question">
+  <div id="how-long-does-warranty-last" class="faq-question">How long does the warranty last?</div>
+
+  <div  class="faq-answer">For one year. You can choose to extend the warranty by purchasing extended warranty on the Products page.</div>
+</div>
+
+&nbsp;
+<h2 id="troubleshooting">
+  <span >Troubleshooting</span>
+</h2>
+<div class="question">
+  <div id="drum-not-making-sounds" class="faq-question">Help! The drum is not making any sounds.</div>
+
+  <div class="faq-answer">First, make sure the drum is plugged into a power source as well as an output audio source (i.e. earphones). Check if any cables are broken or faulty. If the problem continues to persist, email us at <a href="mailto:Info@kaminari.com">info@kaminari.com</a></div>
+</div>
+
+<div class="question">
+  <div id="how-to-record-audio-files" class="faq-question">How do I record an audio file with Kaminari Taiko? </div>
+
+  <div class="faq-answer">
     <ul>
-      <li class="faq-link"><a href="#what-is-kaminari-taiko">What is Kaminari Taiko?</a></li>
-      <li class="faq-link"><a href="#who-is-kaminari-taiko-for">Who is Kaminari Taiko for?</a></li>
-      <li class="faq-link"><a href="#what-can-i-do-with">What can I do with Kaminari Taiko?</a></li>
+     	<li ><div >Download a digital audio workstation such as REAPER.</div></li>
     </ul>
-  </li>
-  <li class="faq-link">
-    <a href="#products">Products</a>
     <ul>
-      <li class="faq-link"><a href="#how-big-is-kaminari-taiko">How big is Kaminari Taiko?</a></li>
-      <li class="faq-link"><a href="#what-is-included-bundle">What is included in the bundle?</a></li>
-      <li class="faq-link"><a href="#dont-want-bundle">I don't want the bundle. Can I buy the drum unit on its own?</a></li>
-      <li class="faq-link"><a href="#why-are-earphones-being-sold">Why are earphones being sold?</a></li>
+     	<li ><span >Power on Kaminari Taiko and connect the USB cable to a computer.</span></li>
     </ul>
-  </li>
-  <li class="faq-link">
-    <a href="#payment-warranty">Payment & Warranty</a>
     <ul>
-      <li class="faq-link"><a href="#what-payment-methods-accepted">What payment methods are accepted?</a></li>
-      <li class="faq-link"><a href="#i-want-to-return">I want to return my purchase! What do I do?</a></li>
-      <li class="faq-link"><a href="#how-long-does-warranty-last">How long does the warranty last?</a></li>
+     	<li ><span >Using the REAPER software, enable the inputs and outputs.</span></li>
     </ul>
-  </li>
-  <li class="faq-link">
-    <a href="#troubleshooting">Troubleshooting</a>
     <ul>
-      <li class="faq-link"><a href="#drum-not-making-sounds">Help! The drum is not making any sounds.</a></li>
-      <li class="faq-link"><a href="#how-to-record-audio-files">How do I record an audio file with Kaminari Taiko?</a></li>
+     	<li ><span >Push the Record button, which will save files as MIDI.</span></li>
     </ul>
-  </li>
-</ul>
-
-<h2 id="overview"><span style="font-weight: 400;">Overview:</span></h2>
-<b id="what-is-kaminari-taiko">What is Kaminari Taiko? </b>
-
-<i><span style="font-weight: 400;">Kaminari (“Thunder”) Taiko is a smaller, electric version of the traditional Japanese taiko drum. It produces the same sounds a normal taiko drum would. </span></i>
-
-&nbsp;
-
-<b id="who-is-kaminari-taiko-for">Who is Kaminari Taiko for?</b>
-
-<i><span style="font-weight: 400;">For anyone! It could perfect for a talented and experienced taiko player or simply for someone who wants to pick up a new hobby. </span></i>
-
-&nbsp;
-
-<b id="what-can-i-do-with">What can I do with Kaminari Taiko?</b>
-
-<i><span style="font-weight: 400;">To play music! The drum measures the velocity at the point of contact, creating a dynamic range of sounds. It is lightweight and easily transportable. In order to produce sound, the drum must be plugged into an output audio source. For those who like to play in the comfort of their home, simply plug in earphones and nobody else would be disturbed.</span></i>
-
-&nbsp;
-<h2 id="products"><span style="font-weight: 400;">Products: </span></h2>
-&nbsp;
-
-<b id="how-big-is-kaminari-taiko">How big is Kaminari Taiko? </b>
-
-<i><span style="font-weight: 400;">Dimensions: 20 in/50.3cm diameter, 4.5 in/11.4 cm tall</span></i>
-
-<i><span style="font-weight: 400;">Weight: 6.6 lbs/3 kg</span></i>
-
-&nbsp;
-
-<b id="what-is-included-bundle">What is included in the bundle? </b>
-
-<i><span style="font-weight: 400;">One Kaminari Taiko unit, bag, and Apple earphones</span></i>
-
-&nbsp;
-
-<b id="dont-want-bundle">I don’t want the bundle. Can I buy the drum unit on its own?</b>
-
-<i><span style="font-weight: 400;">Yes! Head over to the Products page and you will find it listed as a product individually. The drum by itself costs $980 USD. </span></i>
-
-&nbsp;
-
-<b id="why-are-earphones-being-sold">Why are earphones being sold? </b>
-
-<i><span style="font-weight: 400;">Kaminari Taiko will only produce drum-like sounds when the drum is plugged into an output source, like a speaker or headphones. We want you to have the full experience with our product.</span></i>
-
-&nbsp;
-<h2 id="payment-warranty"><span style="font-weight: 400;">Payment &amp; Warranty</span></h2>
-<b id="what-payment-methods-accepted">What payment methods are accepted?</b>
-
-<i><span style="font-weight: 400;">Credit cards &amp; Debit cards, Paypal?(maybe?)</span></i>
-
-<b id="i-want-to-return">I want to return my purchase! What do I do?</b>
-
-<i><span style="font-weight: 400;">Contact us at </span></i><a href="mailto:Sales@kaminari.com"><i><span style="font-weight: 400;">Sales@kaminari.com</span></i></a><i><span style="font-weight: 400;"> for more information.</span></i>
-
-&nbsp;
-
-<b id="how-long-does-warranty-last">How long does the warranty last?</b>
-
-<i><span style="font-weight: 400;">For one year. You can choose to extend the warranty by purchasing extended warranty on the Products page.</span></i>
-
-&nbsp;
-<h2 id="troubleshooting"><span style="font-weight: 400;">Troubleshooting</span></h2>
-<b id="drum-not-making-sounds">Help! The drum is not making any sounds.</b>
-
-<i><span style="font-weight: 400;">First, make sure the drum is plugged into a power source as well as an output audio source (i.e. earphones). Check if any cables are broken or faulty. If the problem continues to persist, email us at </span></i><a href="mailto:Info@kaminari.com"><i><span style="font-weight: 400;">Info@kaminari.com</span></i></a>
-
-&nbsp;
-
-<b id="how-to-record-audio-files">How do I record an audio file with Kaminari Taiko? </b>
-
-&nbsp;
-<ul>
- 	<li style="font-weight: 400;"><i><span style="font-weight: 400;">Download a digital audio workstation such as REAPER.</span></i></li>
-</ul>
-<ul>
- 	<li style="font-weight: 400;"><span style="font-weight: 400;">Power on Kaminari Taiko and connect the USB cable to a computer.</span></li>
-</ul>
-<ul>
- 	<li style="font-weight: 400;"><span style="font-weight: 400;">Using the REAPER software, enable the inputs and outputs.</span></li>
-</ul>
-<ul>
- 	<li style="font-weight: 400;"><span style="font-weight: 400;">Push the Record button, which will save files as MIDI.</span></li>
-</ul>
-<ul>
- 	<li style="font-weight: 400;"><span style="font-weight: 400;">Play drum as would normally.</span></li>
-</ul>
-&nbsp;
-
+    <ul>
+     	<li ><span >Play drum as would normally.</span></li>
+    </ul>
+  </div>
+</div>
 &nbsp;
